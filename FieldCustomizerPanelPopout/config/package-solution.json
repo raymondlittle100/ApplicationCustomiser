@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "field-customizer-panel-popout-client-side-solution",
+    "id": "90db04b3-b113-4649-ac04-06d47fca16de",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/field-customizer-panel-popout.sppkg"
+  }
+}
