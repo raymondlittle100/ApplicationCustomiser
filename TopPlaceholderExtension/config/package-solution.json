@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "top-placeholder-extension-2-client-side-solution",
+    "id": "bc68699b-a4f3-4991-a3ea-040f0d2e0814",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/top-placeholder-extension-2.sppkg"
+  }
+}

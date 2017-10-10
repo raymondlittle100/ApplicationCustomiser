@@ -1,0 +1,1 @@
+?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"ad833095-7210-4d1e-9409-ff927c7e0666":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"testMessage":"Top area of the page"}}}

@@ -1,0 +1,16 @@
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+   Animation (Global)
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/* Global timings
+------------------------------------------------------ */
+
+$customBezier: cubic-bezier(0.19, 1, 0.22, 1);
+
+$timeQuickLink: 0.25s $customBezier;
+$timeStandardLink: 0.5s $customBezier;
+$timeLongLink: 0.75s $customBezier;
+
+$timeQuickDelay: 0.25s;
+$timeStandardDelay: 0.5s;
+$timeLongDelay: 0.75s;

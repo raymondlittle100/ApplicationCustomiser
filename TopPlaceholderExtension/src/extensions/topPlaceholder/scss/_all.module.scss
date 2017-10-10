@@ -1,0 +1,60 @@
+/**
+ * SCSS file that imports other base files.
+ * Used only to make the management of the SCSS files simpler.
+**/
+
+  /** 
+   * Saas loveliness.
+   * All imported files are watched so a change in one will trigger the compiling on the SCSS.
+   * Order of imports are !important.
+   * And since we're mentioning !important, NEVER use it. EVER!
+  **/
+  /* Global
+  ------------------------------------------------------ */
+  @function em($pixels, $context: $textBase) {
+    @return #{$pixels/$context}em;
+  }
+
+  @mixin rem($property, $values, $suffix: null) {
+    $px : ();
+    $rem: ();
+  
+    @each $value in $values {
+  
+      @if $value == 0 or $value == auto {
+        $px : append($px , $value);
+        $rem: append($rem, $value);
+      }
+  
+      @else {
+        $unit: unit($value);
+        $val: parseInt($value);
+  
+        @if $unit == 'px' {
+          $px : append($px,  $value);
+          $rem: append($rem, ($val / $textBase  + rem));
+        }
+  
+        @if $unit == '' {
+          $px : append($px,  $value);
+          $rem: append($rem, ($val / $textBase  + rem));
+        }
+  
+        @if $unit == 'rem' {
+          $px : append($px,  ($val * $textBase  + px));
+          $rem: append($rem, $value);
+        }
+      }
+    }
+  
+    @if $px == $rem {
+      #{$property}: $px #{$suffix};
+    } @else {
+      #{$property}: $px  #{$suffix};
+      #{$property}: $rem  #{$suffix};
+    }
+  }
+  
+  @import 'global/_colours.module.scss';  
+  @import 'global/_animation.module.scss';
+  @import 'global/_typography.module.scss';

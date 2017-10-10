@@ -1,0 +1,37 @@
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+   Colours (Global)
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/* Descriptive Base Colours
+---------------------------------------- */
+
+$clrNone: none;
+$clrInvisible: rgba(0, 0 ,0, 0);
+
+/* Black to White */
+$clrBlack: #000000;
+$clrDarkGrey: #232323;
+$clrGrey: #666666;
+$clrLightGrey: #c6c6c6;
+$clrOffWhite: #f7f7f7;
+$clrWhite: #ffffff;
+
+/* Primary colours */
+$clrWMBlack: #232323;
+$clrWMGold: #b29b5b;
+
+
+/* Gradients
+---------------------------------------- */
+
+$clrBlackToTransGradientVert: linear-gradient(to top, rgba($clrBlack, 0.8), $clrInvisible);
+
+
+/* Colour Usage
+---------------------------------------- */
+
+/* Document */
+$clrPrimary: $clrWMGold;
+$clrSecondary: $clrWMBlack;
+$clrBodyBack: $clrWhite;
+$clrBodyText: $clrDarkGrey;

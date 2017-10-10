@@ -1,0 +1,46 @@
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+   Typography (Global)
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/** 
+ * Global base text size.
+ * Set without units. 
+ **/
+ 
+$textBase: 16;
+
+/* Google font(s)
+---------------------------------------- */
+
+$fontGoogle: 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,700';
+
+@if variable-exists(fontGoogle) {
+	@import url($fontGoogle);
+}
+
+
+/* Font families
+---------------------------------------- */
+
+$bodyFontFamily: 'Segoe UI', 'Segoe UI Light', 'Segoe', Tahoma, Helvetica, Arial, sans-serif;
+$altFontFamily: 'Oswald', sans-serif;
+
+
+/* Font weights
+---------------------------------------- */
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+
+/* Base font values
+---------------------------------------- */
+
+/** 
+ * Used as the default for things like basic paragraphs, lists, etc. 
+ **/
+ 
+$baseFontSize: 20px;
+$baseLineHeight: 1.3;
